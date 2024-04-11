@@ -41,7 +41,7 @@ public class A3Q2 {
             System.out.println(obj);
         }
         for(int i = 0 ; i<4 ; i++){
-            System.out.print(arr[i]+"\t");
+            System.out.println(arr[i]);
         }
     }
 }
