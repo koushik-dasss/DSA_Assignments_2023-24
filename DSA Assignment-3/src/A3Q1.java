@@ -17,8 +17,9 @@ public class A3Q1 {
         // not compulsory here as it's an unchecked exception
         // but compulsory for checked exception as throw keyword doesn't generate checked exception
         if(n<0){
-            throw new NumberFormatException("Negative number");
+            throw new NumberFormatException("Negative number ");
         }else{
+            System.out.print("Your lucky number is : " );
             System.out.println(n);
         }
 
@@ -27,8 +28,16 @@ public class A3Q1 {
         Scanner sc  = new Scanner(System.in);
         System.out.println("Enter your lucky number : ");
         int n = sc.nextInt();
-        System.out.print("Your lucky number is : " );
-        Lucky(n);
+        try{
+            Lucky(n);
+        }
+        catch(NumberFormatException obj){
+            System.out.println(obj);
+        }
+        finally {
+            sc.close();
+        }
+
 
     }
 }
