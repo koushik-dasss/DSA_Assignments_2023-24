@@ -30,6 +30,7 @@ public class A3Q2 {
             int a = Integer.parseInt(arr[0]);
         }
         catch(NumberFormatException obj){
+            System.out.println("Convert string to integer");
             System.out.println(obj);
             System.out.println("Enter one more colour : ");
             arr[0] = sc.nextLine();
