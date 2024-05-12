@@ -29,7 +29,7 @@ public class A3Q6_New {
         int result1 = count(Int_arr,item1);
         System.out.println("Number of times  "+ item1 + " is present in the array : "+ result1);
 
-        // Double array
+        // Double array (Optional)
 
         System.out.println("Enter the number of elements in the Double  array : ");
         int N = sc.nextInt();
