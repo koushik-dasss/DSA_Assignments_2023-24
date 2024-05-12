@@ -10,7 +10,7 @@ public class A1Q4 {
             for(int j = 0 ; j<l ; j++){
                 for(int k = 0 ; k<l ; k++){
                     if(i!=j && j!=k && i!=k){
-                        System.out.println(""+ str.charAt(i)+ str.charAt(j)+ str.charAt(k));
+                        System.out.println(" "+ str.charAt(i)+ str.charAt(j)+ str.charAt(k));
                     }
                 }
             }

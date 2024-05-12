@@ -48,9 +48,9 @@ public class A1Q7 {
         int min_ctr = 0 ;
         int min_index_first = 0 ;
         int min_index_last = 0 ;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]<min){
-                min=arr[i];
+        for (int element : arr ) {
+            if(element<min){
+                min=element;
             }
         }
         for (int i = 0; i < arr.length; i++) {
@@ -67,15 +67,11 @@ public class A1Q7 {
         }
         System.out.println("Maximum element of Array is " + max + " and occurs " +  max_ctr + " times. " );
         System.out.println("Minimum element of Array is " + min + " and occurs "+ min_ctr + " times. ");
-        System.out.println("First occurence of maximum element is at "+(max_index_first+1));
-        System.out.println("Last occurence of minimum element is at "+ (min_index_last+1));
-        System.out.println("First occurence of minimum element is at "+(min_index_first+1)); // Extra statement 
-        System.out.println("Last occurence of minimum element is at "+ (max_index_last+1));  // Extra statement
-        
-
-        
+        System.out.println("First occurrence of maximum element is at "+(max_index_first+1));
+        System.out.println("Last occurrence of minimum element is at "+ (min_index_last+1));
+        System.out.println("First occurrence of minimum element is at "+(min_index_first+1)); // Extra statement
+        System.out.println("Last occurrence of minimum element is at "+ (max_index_last+1));  // Extra statement
         sc.close();
         
     }
-    
 }

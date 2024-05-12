@@ -20,9 +20,9 @@ Sum of digits of 9294 until the number is a single digit is 6
 import java.util.Scanner;
 public class A1Q5 {
     public static int sum_Of_Digits(int n){
-        int sum = 0 , r ;
+        int  r ;
         while(n>=10){
-            sum = 0 ;
+            int sum = 0 ;
             while(n!=0){
                 r=n%10;
                 sum+=r;
